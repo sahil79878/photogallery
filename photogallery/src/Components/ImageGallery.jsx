@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ImageUpload from './ImageUpload';
+
 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
@@ -40,14 +40,11 @@ const ImageGallery = () => {
     fetchImages();
   }, []);
 
-  // Callback to refresh the gallery after upload
-  const handleUploadSuccess = (uploadedImageData) => {
-    setImages([uploadedImageData, ...images]); 
-  };
+
 
   return (
     <div>
-      <ImageUpload onUploadSuccess={handleUploadSuccess} />
+      
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
