@@ -47,7 +47,7 @@ const ImageGallery = () => {
 
   return (
     <div>
-      {/* <ImageUpload onUploadSuccess={handleUploadSuccess} /> */}
+      <ImageUpload onUploadSuccess={handleUploadSuccess} />
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
