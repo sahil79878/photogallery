@@ -42,7 +42,7 @@ const ImageGallery = () => {
 
   // Callback to refresh the gallery after upload
   const handleUploadSuccess = (uploadedImageData) => {
-    setImages([uploadedImageData, ...images]); // Prepend the new image to the gallery
+    setImages([uploadedImageData, ...images]); 
   };
 
   return (
